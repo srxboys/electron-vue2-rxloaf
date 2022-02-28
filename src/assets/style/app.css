@@ -1,0 +1,49 @@
+@import './imgs.css';
+@import './hidden_scroller.css';
+
+div {margin: 0; padding: 0;}
+
+/* body,html { -webkit-app-region: drag; }
+.canclick { -webkit-app-region: no-drag;} */
+
+#app {
+  font-size: 20px;
+  overflow: hidden;
+  max-width: 100vw;
+  max-height: 100vh;
+  position: relative;
+}
+
+.hiddenCusor {cursor: none !important;}
+
+.page {
+  position: fixed;
+  left: 0; top: 0; right: 0; bottom: 0;
+  display: flex; justify-content: center; align-items: center;
+  background: black;
+}
+
+.fix {position: fixed; left: 0; top: 0; right: 0; bottom: 0; background: black;}
+
+.home {color: white;background: black;}
+
+
+/* 不可复制、选中状态 */
+.rx_no_select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
+
+.rx_flex {display: flex;}
+.rx_flexspace {display: flex; justify-content: space-between; align-items: center;}
+
+.rx_flex_center {justify-content: center; align-items: center;}
+.rx_flex_endcenter {justify-content: center; align-items: flex-end;}
+.rx_flex_spacecenter {justify-content: space-between;}
+.rx_flex_itemcenter {align-items: center;}
+.rx_flex_column {flex-direction: column;}
+
